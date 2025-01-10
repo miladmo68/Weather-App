@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom right, #00ffa6, #00c8ff);
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  height: auto;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Engine Styles */
+.search-engine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 30px;
+  gap: 10px;
+}
+
+.search-engine input {
+  width: 70%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-engine input:focus {
+  border: 1px solid #00c8ff;
+  box-shadow: 0 0 5px #00c8ff;
+}
+
+.search-engine button {
+  border: none;
+  border-radius: 8px;
+  background-color: #00c8ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 13px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-engine button:hover {
+  background-color: #008db9;
+}
+
+/* City Information */
+.city {
+  margin-bottom: 10px;
+}
+
+.city h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+}
+
+.city span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Loading Animation */
+.loading {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #000;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Date Section */
+.date {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Weather Details */
+.temp {
+  font-size: 64px;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 22px;
+  font-weight: 500;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+/* Weather Info Section */
+.weather-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.weather-info div {
+  text-align: center;
+}
+
+.weather-info .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-info .column p {
+  margin: 0;
+  color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .search-engine input {
+    width: 65%;
+  }
+
+  .weather-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
