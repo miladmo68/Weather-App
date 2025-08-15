@@ -14,7 +14,8 @@
 ## ​ Screenshot
 
 <p align="center">
-  <img width="1920" height="1080" alt="Weather-App" src="https://github.com/user-attachments/assets/your-image-id.png" />
+<img width="2881" height="1626" alt="Weather-App" src="https://github.com/user-attachments/assets/f6bff1c7-8b79-4636-ab43-6dde0a001c2b" />
+
 </p>
 
 ---
